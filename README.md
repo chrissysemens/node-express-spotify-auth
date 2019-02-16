@@ -17,10 +17,6 @@ Visit the Spotify developer portal (https://developer.spotify.com/) and create a
 There's a `.env` file provided containing the keys of required environment vars. 
 Update this file with your App vars for local development.
 
-Within Heroku, the environment vars can be set via the CLI, for example: 
-`heroku config:set CLIENT_ID=1234567809fdsnfj`
-
-
 There is an additional two env vars to be set:
 
 `FINAL_URI` - This is the Url which will be loaded if authorisation and the token request is succesful. 
@@ -36,6 +32,11 @@ With the Env vars configured in a .env file, the app can be started locally `nod
 The Express application to a Node.js environment such as Heroku, plese see above note about setting environment variables.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bedechrissy/node-express-spotify-auth)
+
+**Note**
+Within Heroku, the environment vars are set via the CLI, for example: 
+`heroku config:set CLIENT_ID=1234567809fdsnfj`
+
 
 ## Usage / flow
 Once hosted, from another application you can:
