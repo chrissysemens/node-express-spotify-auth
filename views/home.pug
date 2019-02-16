@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+  h1 Node Express - Spotify Auth Code
+  p A small Node Express app built to handle the Authorization Code flow
+  img(src='spotify.png' class='logo')
+  ul 
+    li Learn about Spotify Authorization 
+       a(href='https://developer.spotify.com/documentation/general/guides/authorization-guide/') here 
+    li Begin developement on an app from which you want to call the Spotify Api's
+    li Register a new app in the Spotify Developer portal 
+       a(href='https://developer.spotify.com/dashboard/login') here
+    li Make sure you've set your Env variables correctly,  see repository documentation 
+       a(href='https://www.github.com/bedechrissy/node-spotify-auth-code') here
+    li Call the /login route of this app from the Application you wish to authenticate
+    li After succesful authentication the user should be redirected to your final Url. <br>
+    li A token will be returned in the QueryString and can be used for Api further calls.
+
+  h4 Have fun with the Spotify Api. 
+     a(href='https://developer.spotify.com/documentation/web-api/reference/') Api Ref
+
+  a(href='http://www.github.com/bedechrissy', class='small') Chrissy Semens

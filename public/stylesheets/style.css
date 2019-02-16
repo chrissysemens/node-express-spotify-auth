@@ -1,0 +1,34 @@
+body{
+    background-color: #222326;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+a{
+    color:#1db954;
+}
+
+h1{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.logo{
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    height: 30px;
+}
+
+.small{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 11px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+

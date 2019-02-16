@@ -1,0 +1,38 @@
+{
+  "name": "node-express-spotify-auth",
+  "version": "0.0.1",
+  "description": "Handles token exchange for the Spotify Authorization Code flow",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "debug": "^4.1.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "engines": {
+    "node": "6.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Chrissy Semens",
+  "contributors": [
+    ""
+  ],
+  "license": "MIT"
+}
