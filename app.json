@@ -1,6 +1,6 @@
 {
   "name": "node-express-spotify-auth",
   "description": "Handles token exchange for the Spotify Authorization Code flow",
-  "repository": "http://www.github.com/bedechrissy/node-express-spotify-auth",
+  "repository": "https://www.github.com/bedechrissy/node-express-spotify-auth",
   "keywords": ["node", "express", "static"]
 }

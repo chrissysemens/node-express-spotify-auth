@@ -14,15 +14,20 @@ Visit the Spotify developer portal (https://developer.spotify.com/) and create a
   e.g (https://myspotauth/callback) or localhost:5000/callback for local development callbacks.
 
 ## Setting Env variables to match your App
-There's a `.env.defaults` file with the keys of required environment vars in. This file can be updated and renamed to simply .env for local development. 
+There's a `.env` file provided containing the keys of required environment vars. 
+Update this file with your App vars for local development.
 
-Within Heroku, the environment vars can be set via the CLI, for example: `heroku config:set CLIENT_ID=1234567809fdsnfj`
+Within Heroku, the environment vars can be set via the CLI, for example: 
+`heroku config:set CLIENT_ID=1234567809fdsnfj`
 
-There is an additional two env vars to set:
+
+There is an additional two env vars to be set:
+
 `FINAL_URI` - This is the Url which will be loaded if authorisation and the token request is succesful. 
 A spotify Token will be returned to this Url as a QueryString parameter. This token can be parsed and then used to in subsequent requests to the Spotify Api.
 
-`STATEKEY` - The name given to the cookie used during auth. This doesn't require change from `spotify_auth_state`
+`STATEKEY` - The name given to the cookie used during auth. 
+This doesn't require a change from `spotify_auth_state`
 
 ## Running locally
 With the Env vars configured in a .env file, the app can be started locally `node index.js`
@@ -30,7 +35,7 @@ With the Env vars configured in a .env file, the app can be started locally `nod
 ## Deploying the Express Application
 The Express application to a Node.js environment such as Heroku, plese see above note about setting environment variables.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bedechrissy/node-express-spotify-auth)
 
 ## Usage / flow
 Once hosted, from another application you can:
