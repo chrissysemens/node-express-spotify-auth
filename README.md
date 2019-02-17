@@ -44,7 +44,7 @@ Once hosted, from another application you can:
 
 * Redirect a user to the login route (https://myspotauth/login)
 * A cookie will be stored locally and the user will be re-directed to the Spotify login page
-* On succesful authentication, the callback Url will be called (https://myspotauth/callback)
+* On succesful authentication, the redirect Url will be called (https://myspotauth/callback)
 * After checking everything ties up, a token request will be made
 * If successful the user will be redirected to the FINAL_URL with a token in the Query string
 * This token can be parsed and used to make subsequent requests to the Api
