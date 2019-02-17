@@ -35,6 +35,7 @@ The Express application to a Node.js environment such as Heroku, plese see above
 
 **Note**
 Within Heroku, the environment vars are set via the CLI, for example: 
+
 `heroku config:set CLIENT_ID=1234567809fdsnfj`
 
 
