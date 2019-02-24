@@ -3,15 +3,13 @@ var request = require('request');
 var router = express.Router();
 
 /* Refresh */
-router.get('/refresh', function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', origin);
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
+router.get('/', function(req, res, next) {
+   
     var refresh_token = req.query.refresh_token;
 
     var authOptions = {
         url: 'https://accounts.spotify.com/api/token',
-        headers: { 'Authorization': 'Basic ' + (new Buffer(client_id + ':' + client_secret).toString('base64')) },
+        headers: { 'Authorization': 'Basic ' + (new Buffer(process.env.CLIENT_ID + ':' + process.env.CLIENT_SECRET).toString('base64')) },
         form: {
           grant_type: 'refresh_token',
           refresh_token: refresh_token

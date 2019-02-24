@@ -12,6 +12,8 @@ var callback = require('./routes/callback');
 var error = require('./routes/error');
 var login = require('./routes/login');
 var refresh = require('./routes/refresh');
+var cors = require('cors');
+
 
 /* Instansiate the App */
 var app = express()
@@ -22,7 +24,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/public'));
+app.use(cors());
 
 /* View Engine setup */
 app.set('views', __dirname + '/views');
@@ -33,7 +36,7 @@ app.use('/', home);
 app.use('/callback', callback);
 app.use('/error', error);
 app.use('/login', login);
-app.use('/refresh', login);
+app.use('/refresh', refresh);
 
 app.get('*',function (req, res) {
   res.redirect('/');
