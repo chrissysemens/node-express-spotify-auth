@@ -11,6 +11,7 @@ var home = require('./routes/home');
 var callback = require('./routes/callback');
 var error = require('./routes/error');
 var login = require('./routes/login');
+var refresh = require('./routes/refresh');
 
 /* Instansiate the App */
 var app = express()
@@ -32,6 +33,7 @@ app.use('/', home);
 app.use('/callback', callback);
 app.use('/error', error);
 app.use('/login', login);
+app.use('/refresh', login);
 
 app.get('*',function (req, res) {
   res.redirect('/');
