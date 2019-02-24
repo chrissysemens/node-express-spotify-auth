@@ -49,7 +49,8 @@ router.get('/', function(req, res, next) {
 
           res.redirect(process.env.FINAL_RESPONSE_URI + '?' +
             querystring.stringify({
-              access_token: access_token
+              access_token: access_token,
+              refresh_token: refresh_token
             }));
 
     } else {
